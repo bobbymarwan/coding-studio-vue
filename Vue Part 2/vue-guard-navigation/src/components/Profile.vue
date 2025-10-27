@@ -11,10 +11,7 @@ import { onBeforeRouteLeave, onBeforeRouteUpdate, useRoute } from 'vue-router'
 
 const route = useRoute()
 
-// onBeforeRouteEnter((to, from, next) => {
-//   console.log('beforeRouteEnter:', to, from)
-//   next()
-// })
+
 
 onBeforeRouteUpdate((to, from, next) => {
     console.log('onBeforeRouteUpdate: ', to, from)
